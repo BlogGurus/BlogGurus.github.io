@@ -5,6 +5,7 @@ async function enableTorch() {
     try {
         videoStream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } });
         track = videoStream.getVideoTracks()[0];
+
         const capabilities = track.getCapabilities();
 
         if ("torch" in capabilities) {  // Check if torch is supported
@@ -18,8 +19,9 @@ async function enableTorch() {
     }
 }
 
-function disableTorch() {
+async function disableTorch() {
     if (track) {
+        await track.applyConstraints({ advanced: [{ torch: false }] });
         track.stop();
         track = null;
         console.log("Torch disabled");
