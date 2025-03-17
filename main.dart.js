@@ -56376,40 +56376,39 @@ A.db("Torch Error: "+A.k(p))
 q.w=!1
 q.ai(new A.a2K())}return A.C(null,r)}})
 return A.D($async$we,r)},
-kK(){var s=0,r=A.E(t.H),q=1,p,o=this,n,m,l,k,j,i,h,g,f,e
+kK(){var s=0,r=A.E(t.H),q=1,p,o=this,n,m,l,k,j,i,h,g,f
 var $async$kK=A.F(function(a,b){if(a===1){p=b
 s=q}while(true)switch(s){case 0:o.y=!0
 o.r=new Uint8Array(0)
-n=""
 q=3
-m=window.localStorage.getItem("camera_permission")
-A.db("window.localStorage['camera_permission'] = "+A.k(m))
-m.toString
-i=window.navigator
+n=window.localStorage.getItem("camera_permission")
+A.db("window.localStorage['camera_permission'] = "+A.k(n))
+n.toString
+j=window.navigator
+j.toString
+m=j
+if(m.mediaDevices!=null){j=m.permissions
+j.toString
+i=t.z
+i=j.query(A.aeJ(A.av(["name","camera"],i,i)))
 i.toString
-l=i
-if(l.mediaDevices!=null){i=l.permissions
-i.toString
-h=t.z
-h=i.query(A.aeJ(A.av(["name","camera"],h,h)))
-h.toString
-A.cQ(h,t.Ds).aK(new A.a2L(),t.P)}else A.db("Media devices are not supported in this browser.")
-i=J.c3($.a5p)
-h=$.a5p
-g=J.bG(h)
-k=i>1?g.pS(h,new A.a2M()):g.gH(h)
-o.d=new A.yz(new A.Bc(B.Ey,null,null,null,!1),new A.pU(!1,!1,!1,!1,!1,!1,null,null,null,B.yr,B.f1,B.f4,!1,!1,B.dc,null,null,k),$.aZ())
+A.cQ(i,t.Ds).aK(new A.a2L(),t.P)}else A.db("Media devices are not supported in this browser.")
+j=J.c3($.a5p)
+i=$.a5p
+h=J.bG(i)
+l=j>1?h.pS(i,new A.a2M()):h.gH(i)
+o.d=new A.yz(new A.Bc(B.Ey,null,null,null,!1),new A.pU(!1,!1,!1,!1,!1,!1,null,null,null,B.yr,B.f1,B.f4,!1,!1,B.dc,null,null,l),$.aZ())
 s=6
 return A.K(A.nd(B.dd,null,t.z),$async$kK)
-case 6:i=o.d
-o.e=i.f7(i.a.CW).fU(new A.a2N())
+case 6:j=o.d
+o.e=j.f7(j.a.CW).fU(new A.a2N())
 q=1
 s=5
 break
 case 3:q=2
-e=p
-j=A.a6(e)
-A.db("Camera Error : "+A.k(j))
+f=p
+k=A.a6(f)
+A.db("Camera Error : "+A.k(k))
 o.z=!0
 o.y=!1
 o.ai(new A.a2O())
@@ -56417,7 +56416,7 @@ s=5
 break
 case 2:s=1
 break
-case 5:if(J.kn($.a5p)&&J.f(n,"granted"))o.x=!0
+case 5:J.kn($.a5p)
 A.db("Camera "+A.k($.a5p))
 o.y=!1
 o.ai(new A.a2P())
