@@ -60067,8 +60067,7 @@ s=5
 break
 case 2:s=1
 break
-case 5:J.jn($.yX)
-A.dg("Camera "+A.l($.yX))
+case 5:A.dg("Camera "+A.l($.yX))
 o.y=!1
 o.ah(new A.a5J())
 return A.G(null,r)
@@ -60189,6 +60188,7 @@ s=5
 return A.K(A.nU(B.jm,null,t.z),$async$$1)
 case 5:o=n.d
 n.e=o.fN(o.a.CW).hA(new A.a5G())
+if(J.jn($.yX))n.x=!0
 s=3
 break
 case 4:if(o==="denied")A.dg("Camera access denied. Ask user to enable in browser settings.")
